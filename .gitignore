@@ -1,0 +1,9 @@
+.config
+config
+*.swp
+*.swo
+*.swm
+*.swn
+thumbs.db
+.ssh/
+img/
