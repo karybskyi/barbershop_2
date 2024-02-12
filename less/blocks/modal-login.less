@@ -1,0 +1,222 @@
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 12;
+
+    top: 5vh;
+   
+    left: 50%;
+
+    box-shadow: 0 30px 50px rgba(0, 0, 0, 0.7);
+}
+
+.modal::after{
+    content: "";
+
+    position: fixed;
+
+    top: 0;
+    left: 0;
+
+    z-index: -5;
+
+    height: 100vh;
+    width: 100vw;
+
+    background-color: transparent;
+}
+
+.modal--hidden{
+    display: none;
+}
+
+.modal--shown{
+    display: block;
+}
+
+.modal--login {
+
+    z-index: 13;
+
+    width: 320px;
+    min-height: 410px;
+
+    background-color: #f8f5f2;
+    color: #000;
+
+    margin: 0 auto;
+    margin-left: -160px;
+    
+    padding: 0 20px;
+
+    border-bottom: 1px solid transparent;
+
+    box-sizing: border-box;
+}
+
+.login__header {
+    .title();
+
+    font-size: 30px;
+    line-height: 30px;
+
+    text-transform: uppercase;
+
+    padding-top: 33px;
+    margin-bottom: 27px;
+}
+
+.login__describe {
+    .reset-p();
+
+    margin-bottom: 31px;
+
+    text-align: center;
+}
+
+.login__input {
+    width: 280px;
+    min-height: 50px;
+
+    padding: 17px;
+    padding-right: 45px;
+
+    }
+
+.login__input::placeholder{
+    color: #000;
+    font-size: 18px;
+}
+
+.login__icon--user{
+    background-image: url(../../img/icon-user.png);
+    background-repeat: no-repeat;
+    background-position: 247px 17px;
+}
+
+.login__icon--password{
+    background-image: url(../../img/icon-password.png);
+    background-repeat: no-repeat;
+    background-position: 247px 17px;
+}
+
+
+.restore {
+    width: 105px;
+
+    color: #000;
+    text-decoration: underline;
+}
+
+.login__help {
+    .reset-p();
+
+    display: flex;
+    justify-content: space-between;
+
+    height: 33px;
+    line-height: 33px;
+
+    margin-bottom: 30px;
+}
+
+
+
+.login__help input[type="checkbox"] + label {
+    width: 155px;
+
+    padding-left: 47px;
+
+    box-sizing: border-box;
+}
+
+.login__help a{
+    width: 107px;
+    flex-shrink: 1;
+    
+    box-sizing: border-box;
+    text-align: right;
+}
+
+
+
+.login__help input[type="checkbox"] + label::before  {
+    width: 33px;
+    height: 33px;
+}
+
+.login__help input[type="checkbox"]:checked + label::before {
+    background-position: 6px 8px;///!to double-check!
+}
+
+.login__form button[type="submit"]{
+    margin-bottom: 36px;
+}
+
+.modal__close {
+
+    bottom: 37px;
+    right: 20px;
+
+    
+}
+
+@media (min-width:@tablet-width) {
+    .modal{
+        top: 12vh;
+    }
+
+    .modal--login {
+        
+        width: 460px;
+        min-height: 500px;
+        margin-left: -230px;
+        padding: 0 70px;
+    }
+
+    .login__input {
+        width: 320px;
+        min-height: 70px;
+
+        padding: 25px;
+        padding-right: 65px;
+    
+        background-position: 276px 27px;
+    }
+
+    .login__form button[type="submit"]{
+        margin-bottom: 60px;
+        width: 100%;
+    }
+
+    .modal__close {
+        position: absolute;
+        top: 60px;
+        right: -75px;
+    }
+
+    // .button--modal-close::before,
+    // .button--modal-close::after {
+    //     position: absolute;
+
+    //     content: "";
+
+    //     width: 36px;
+    //     height: 2px;
+
+    //     background-color: #fff;
+
+    //     top: 12px;
+    //     left: -5px;
+    // }
+
+    // .button--modal-close::before{
+    //     transform: rotate(45deg);
+    // }
+    
+    // .button--modal-close::after{
+    //     transform: rotate(-45deg);
+    // }
+
+
+}

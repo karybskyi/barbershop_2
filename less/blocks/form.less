@@ -1,0 +1,139 @@
+input[type="text"],
+input[type="tel"],
+input[type="email"],
+input[type="password"],
+textarea {
+
+    padding: 17px 19px;
+
+
+    box-sizing: border-box;
+
+    border: 1px solid #e5ddd5;
+}
+
+textarea {
+    width: 100%;
+    // 380
+    min-height: 112px;
+}
+
+input[type="text"]::placeholder,
+input[type="tel"]::placeholder,
+input[type="email"]::placeholder,
+input[type="password"]::placeholder,
+textarea::placeholder {
+    color: #000;
+    font-size: 18px;
+}
+
+input[type="text"]:hover,
+input[type="tel"]:hover,
+input[type="email"]:hover,
+input[type="password"]:hover,
+textarea:hover {
+    border: 1px solid #d5c9bd;
+}
+
+input[type="text"]:active,
+input[type="text"]:focus,
+input[type="tel"]:active,
+input[type="tel"]:focus,
+input[type="email"]:active,
+input[type="email"]:focus,
+input[type="password"]:active,
+input[type="password"]:focus,
+textarea:active,
+textarea:focus {
+    border: 1px solid #999999;
+    outline: none;
+}
+
+
+input[type="checkbox"] + label,
+input[type="radio"] + label {
+    position: relative;
+
+    display: block;
+
+    cursor: pointer;
+    user-select: none;
+}
+
+
+
+////?
+input[type="checkbox"] + label {
+    padding-left: 60px;
+}
+/////
+
+input[type="checkbox"] + label::before,
+input[type="radio"] + label::before
+{
+    content: "";
+    position: absolute;
+
+    box-sizing: border-box;
+    border: 1px solid #e5ddd5;
+
+    background-color: #fff;
+}
+
+
+
+
+
+//checkbox///////////////////////////////////////////////////
+input[type="checkbox"] + label::before {
+    top: 0;
+    left: 0;
+    
+    width: 36px;
+    height: 36px;
+}
+
+input[type="checkbox"]:checked + label::before {
+    background-image: url(../../img/checkbox-checked.png);
+    background-repeat: no-repeat;
+   
+}
+
+input[type="radio"] + label::before{
+    content: "";
+    position: absolute;
+ 
+    width: 50px;
+    height: 50px;
+
+    border-radius: 50%;
+}
+
+input[type="radio"]:checked + label::after{
+    content: "";
+    position: absolute;
+    
+    width: 18px;
+    height: 18px;
+    
+    border-radius: 50%;
+
+    border: 1px solid #e5ddd5;
+    background-color: #fff;
+}
+
+input[type="checkbox"]:hover + label::before,
+input[type="radio"]:hover + label::before,
+input[type="checkbox"]:focus + label::before,
+input[type="radio"]:focus + label::before,
+input[type="radio"]:checked:hover + label::after,
+input[type="radio"]:checked:focus + label::after{
+    // content: "";
+    // position: absolute;
+    border: 1px solid #d5c9bd;
+}
+
+input[type="checkbox"]:active + label::before,
+input[type="radio"]:active + label::before{
+    background-color: #d5c9bd;
+}

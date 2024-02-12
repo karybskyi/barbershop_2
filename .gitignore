@@ -7,3 +7,4 @@ config
 thumbs.db
 .ssh/
 img/
+node_modules

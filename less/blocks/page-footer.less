@@ -1,0 +1,266 @@
+.page-footer {
+
+    box-sizing: border-box;
+
+    width: 320px;
+    min-height: 460px;
+
+    margin: 0 auto;
+
+    background-color: #292929;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.page-footer__wrapper {
+    padding-top: 70px;
+    // padding-left: 20px;
+    // padding-right: 20px;
+    position: relative;
+
+    &::before{
+        content: "";
+        width: 0;
+        height: 0;
+
+        position: absolute;
+        left: 0;
+        top: 0;
+
+        border: 160px solid transparent;
+        border-top: 34px solid #f8f5f2; 
+        border-bottom: none;
+    }
+}
+
+.photo__footer .page-footer__wrapper::before{
+    border-top: 34px solid #353535; 
+}
+
+.page-footer__contacts {
+    width: 280px;
+    margin: 0 auto;
+
+    text-align: center;
+}
+
+.contacts__title{
+    display: block;
+
+    font-weight: bold;
+
+    margin-bottom: 20px;
+    // text-transform: uppercase;
+}
+
+.contacts__text {
+    .reset-p();
+    // margin-bottom: 20px;
+}
+
+.contacts__phone{
+    margin-top: 20px;
+}
+
+.contacts__phone-mobile{
+    display: none;
+}
+
+.page-footer__social{
+    margin-top: 25px;
+}
+
+.social__list{
+    display: flex;
+
+    .reset-list();
+
+    width: 320px;
+}
+
+.social__item{
+    width: 33.33%;
+    flex-shrink: 1;
+}
+
+.social__link {
+    width: 100%;
+    height: 100px;
+
+    line-height: 100px;
+}
+
+
+
+.social__title{
+    display: none;
+}
+
+.page-footer__copyright{
+    display: flex;
+    flex-direction: column;
+    width: 280px;
+
+    margin: 35px auto 25px auto;
+}
+
+.copyright__text {
+    display: block;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+@media (min-width: @tablet-width){
+    .page-footer {
+        flex-direction: row;
+        flex-wrap: wrap;
+
+        width: 768px;
+        min-height: 350px;
+
+        padding-left: 64px;
+        padding-right: 64px;
+    }
+
+    .page-footer__wrapper {
+
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+
+        width: 640px;
+
+        &::before{
+            content: none;
+        }
+    
+    }
+    
+    .page-footer__contacts {
+        width: 320px;
+
+        align-items: left;
+        // order: 0;
+    }
+
+    .contacts__title {
+        text-align: left;
+    }
+
+    .contacts__phone-mobile {
+        display: inline;
+        text-transform: none;
+    }
+
+    .contacts__phone {
+        border: none;
+        line-height: 27px;
+
+        text-align: left;
+        
+        font-weight: normal;
+
+        margin-top: 5px;
+    }
+
+    .page-footer__social{
+        width: 640px;
+        order: 2;
+    }
+
+
+    .page-footer__copyright{
+        width: 320px;
+        box-sizing: border-box;
+        margin: 0;
+        padding-left: 160px;
+
+        // order: 1;
+    }
+
+    .copiright__link {
+        width: 160px;
+    }
+
+    .social__list{
+        min-height: 100px;
+        width: 640px;
+        justify-content: space-between;
+
+        margin-bottom: 65px;
+    }
+
+    .social__item{
+        min-height: 100px;
+        width: 214px;
+    }
+
+}
+
+@media (min-width: @desktop-width){
+    .page-footer{
+        width: 1200px;
+        min-height: 200px;
+
+        padding-left: 120px;
+        padding-right: 120px;
+    }
+
+    .page-footer__wrapper{
+        width: 960px;
+
+        justify-content: space-between;
+    }
+
+    .page-footer__contacts {
+        width: 320px;
+        margin: 0;
+    }
+
+    .social__title{
+        display: inline-block;
+    }
+
+    .page-footer__social{
+        // width: 160px;
+        width: 320px;
+
+        margin: 0;
+        padding: 0 80px;
+        box-sizing: border-box;
+        order: 0;
+    }
+
+    .social__title{
+        width: 160px;
+        text-align: center;
+
+        margin-bottom: 15px;
+    }
+
+    .social__list {
+        width: 160px;
+        min-height: 50px;
+    }
+
+    .social__item {
+        min-height: 50px;
+        width: 50px;
+    }
+
+    .social__link{
+        height: 50px;
+        line-height: 50px;
+    }
+
+    .page-footer__copyright {
+        width: 160px;
+        padding: 0;
+        margin: 0;
+        margin-left: 160px;
+    }
+}
+
+

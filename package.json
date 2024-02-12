@@ -1,0 +1,29 @@
+{
+  "name": "barbershop_2",
+  "version": "1.0.0",
+  "description": "Gulp project for barbershop_2",
+  "main": "gulpfile.js",
+  "dependencies": {},
+  "devDependencies": {
+    "autoprefixer": "^9.6.0",
+    "browser-sync": "^2.26.5",
+    "gulp": "^3.9.0",
+    "gulp-less": "^4.0.1",
+    "gulp-plumber": "^1.2.1",
+    "gulp-postcss": "^8.0.0",
+    "webpack-dev-server": "^3.5.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chistakaribsky/barbershop_2.git"
+  },
+  "author": "karybsky",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/chistakaribsky/barbershop_2/issues"
+  },
+  "homepage": "https://github.com/chistakaribsky/barbershop_2#readme"
+}
