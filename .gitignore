@@ -6,5 +6,4 @@ config
 *.swn
 thumbs.db
 .ssh/
-img/
 node_modules
