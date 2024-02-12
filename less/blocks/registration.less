@@ -1,0 +1,350 @@
+.registration {
+    width: 320px;
+    margin: 0 auto;
+    padding: 0 20px;
+    padding-bottom: 40px;
+
+    box-sizing: border-box;
+
+    background-color: #f8f5f2;
+    color: #000;
+}
+
+.registration__form {
+    width: 280px;
+}
+
+.registration__title {
+
+    .title();
+
+    margin-bottom: 0;
+
+    font-size: 30px;
+
+    padding-top: 35px;
+    padding-bottom: 35px;
+    text-align: center;
+}
+
+fieldset {
+    margin: 0;
+    padding: 0;
+
+    border: none;
+
+    & p{
+        .reset-p();
+    }
+}
+
+.registration__item{
+    width: 280px;
+    height: 50px;
+    // box-sizing: border-box;
+    margin-bottom: 6px;
+}
+
+.registration__item__wrapper,
+.registration__item[id="registration__email"]{
+    margin-bottom: 32px;
+}
+
+.registration__legend {
+    //reset defaults
+    padding-inline-start: 0;
+    padding-inline-end: 0;
+    border: 0;
+    //
+    font-size: 20px;
+    text-transform: uppercase;
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.registration__options-list {
+
+    width: 280px;
+    .reset-list();
+
+    ///JUST FOR MOBILE!
+    margin-left: 3px;
+
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.registration__options-item{
+    height: 220px;
+    width: 92px;
+
+    box-sizing: border-box;
+    
+
+    background-repeat: no-repeat;
+    background-position-y: 115px;
+
+    & label{
+        padding-top: 70px;
+        text-align: center;
+        text-transform: lowercase;
+
+        &::before{
+            top: 5px;
+            left: 20px;
+        }
+
+        &::after{
+            top: 20.5px;
+            left: 35.5px;
+        }
+    }
+}
+
+.registration__options-item--admiral {
+    background-image: url("../../img/admiral-icon.png");
+    background-position-x: 20.5px;
+}
+
+.registration__options-item--lumber{
+    background-image: url("../../img/lumber-icon.png");
+    background-position-x: 17.5px;
+}
+
+.registration__options-item--polar{
+    background-image: url("../../img/polar-icon.png");
+    background-position-x: 15px;
+}
+
+.registration__options-item--boyar{
+    background-image: url("../../img/boyar-icon.png");
+    background-position-x: 17.5px;
+}
+
+.registration__options-item--sage {
+    background-image: url("../../img/sage-icon.png");
+    background-position-x: 22.5px;
+}
+//t60   b75
+
+.registration__additional-services-list{
+    .reset-list();
+
+    min-height: 315px;
+    width: 280px;
+    padding-bottom: 48px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.registration__additional-services-item label{
+    height: 37px;
+    line-height: 37px;
+    box-sizing: border-box;
+}
+
+.registration__checkbox:checked + label::before{
+    background-position: 7px 8px;
+}
+
+
+
+
+
+
+
+@media (min-width: @tablet-width){
+    .registration {
+        width: 768px;
+       
+        padding: 0 64px;
+        padding-bottom: 80px;   
+    }
+
+    .registration__title-wrapper{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        width: 640px;
+        margin-bottom: 30px;
+    }
+
+    .registration__title {
+        display: inline-block;
+        width: 480px;
+        text-align: start;
+        font-size: 40px;
+    }
+
+    .registration__form {
+        width: 640px;
+    }
+
+    .registration__legend {
+        display: block;
+        position: relative;
+
+        font-size: 30px;
+
+        width: 370px;
+
+        &::before,
+        &::after{
+            content: "";
+
+            position: absolute;
+            top: 53px;
+        
+            height: 1px;
+            width: 135px;
+
+            background-color: #e5ddd5;
+        }
+
+        &::before {
+            left: -135px;
+        }
+
+        &::after{
+            right: -135px;
+        }
+    }
+
+    .registration__options-list{
+        margin-bottom: 20px;
+        margin-left: 0;
+    }
+
+    .registration__item__wrapper{
+        width: 640px;
+        display: flex;
+        margin-bottom: 35px;   
+    }
+
+    .registration__item{
+        height: 70px;
+        line-height: 70px;
+    }
+
+    #registration__last-name,
+    #registration__first-name,
+    #registration__middle-name {
+        width: 213px;
+    }
+
+    #registration__phone-number,
+    #registration__email,
+    #registration__comment {
+        width: 100%;
+        margin-bottom: 35px;
+    }
+
+    #registration__comment {
+        height: 210px;
+        margin-bottom: 0;
+    }
+
+    .registration__options-list {
+        width: 640px;
+        justify-content: space-between;
+    }
+
+    .registration__additional-services-list{
+        width: 640px;
+        min-height: 202px;
+        padding-bottom: 0;
+        margin-top: 35px;
+        margin-bottom: 10px;
+        box-sizing: border-box;
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+
+    .registration__additional-services-item{
+        width: 320px;
+        height: 36px;
+        box-sizing: border-box;
+
+        margin-bottom: 48px;
+    }
+}
+
+@media (min-width: @desktop-width){
+    .registration {
+        width: 1200px;
+       
+        padding: 0 120px;
+        
+        padding-bottom: 85px;
+    }
+
+    .registration__title-wrapper {
+        width: 960px;
+        padding-top: 25px;
+        margin-bottom: 30px;
+    }
+
+    .registration__form {
+        width: 960px;
+    }
+
+    .registration__item__wrapper{
+        width: 960px;
+        justify-content: space-between;
+    }
+
+    #registration__last-name,
+    #registration__first-name,
+    #registration__middle-name {
+        width: 295px;
+    }
+
+    #registration__phone-number,
+    #registration__email{
+        width: 462px;
+    }
+
+    .registration__item__wrapper-2{
+        display: flex;
+        justify-content: space-between;
+        width: 960px;
+    }
+
+    #registration__comment{
+        margin-bottom: 35px;
+    }
+
+    .registration__options-list{
+        margin-top: 20px;
+    }
+
+    .registration__legend {
+        
+        font-size: 30px;
+
+        width: 370px;
+
+        &::before,
+        &::after{
+            width: 280px;
+    
+            background-color: #e5ddd5;
+        }
+        &::before {
+            left: -280px;
+        }
+
+        &::after{
+            right: -280px;
+        }
+    }
+
+    .registration__additional-services-list{
+        width: 960px;
+    }
+
+}

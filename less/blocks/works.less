@@ -1,0 +1,359 @@
+.works {
+    width: 320px;
+    // min-height: 2030px;
+    padding-bottom: 15px;///?
+
+    margin: 0 auto;
+    background-color: #f8f5f2;
+    color: #000;
+
+    position: relative;
+
+    &::after{
+        content: "";
+        width: 0;
+        height: 0;
+
+        position: absolute;
+        bottom: -34px;
+        left: 0;
+
+        border: 160px solid transparent;
+        border-top: 34px solid #f8f5f2; 
+        border-bottom: none;
+    }
+}
+
+.works__title {
+  .title();
+
+  padding-top: 35px;
+}
+
+//BUTTON!
+.to-main{
+    display: none;
+}
+
+.works__list {
+    width: 320px;
+    padding: 0 20px;
+
+    box-sizing: border-box;
+}
+
+.works__item {
+    display: block;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    margin-inline-start: 0;
+    margin-inline-end: 0;  
+    margin-bottom: 20px;
+}
+
+
+.works__client-picture {
+    position: relative;
+    
+    .reset-p();
+
+    width: 280px;
+    height: 175px;
+
+    & img{
+        width: 280px;
+        height: 175px;
+    }
+}
+
+.best__work .works__client-picture {
+    height: 480px;
+
+    & img{
+        height: 480px;
+    }
+
+    &::before {
+        content: url("../../img/best-work.png");
+        position: absolute;
+        top: 400px;
+        left: 0;
+    }
+}
+
+.works__rewiev-wrapper {
+    padding: 0 21px;
+
+    box-sizing: border-box;
+    width: 280px;
+
+    border:  1px solid #e5ddd5;
+    border-top: none;
+}
+
+.works__client-name{
+    display: block;
+
+    font-size: 24px;
+    line-height: 27px;
+    font-weight: 700;
+    font-style: normal;
+
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+.works__reviews-text{
+    .reset-p();
+    padding-bottom: 25px;
+}
+
+.works__types-list{
+    .reset-list();
+
+    width: 280px;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.works__types-item{
+    position: relative;
+
+    width: 119px;
+
+    text-align: center;
+    margin-bottom: 25px;
+
+    
+}
+
+.works__types-item::before{
+    position: absolute;
+    left: 0; 
+    top: 4px;
+}
+
+.cut::before {
+    content: url("../../img/cut-icon.png");
+}
+
+.shaving::before,
+.beard::before {
+    content: url("../../img/shaving-icon.png");
+}
+
+.mustache::before {
+    content: url("../../img/mustache-icon.png");
+    left: -6px;
+    top: 2px; 
+}
+
+@media (min-width: @tablet-width){
+    .works {
+        width: 768px;
+        padding-top: 54px;
+        padding-left: 65px;
+        padding-right: 65px;
+        box-sizing: border-box;
+
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+        &::after{
+           
+            bottom: -40px;
+           
+    
+            border: 384px solid transparent;
+            border-top: 40px solid #f8f5f2; 
+            border-bottom: none;
+        }
+    }
+
+    .works__title{
+        padding-top: 10px;
+        margin-bottom: 50px;
+    }
+
+    .works__list {
+        padding: 0;
+        width: 640px;
+        order: 2;
+    }
+
+    .works__item{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        min-height: 295px;
+        width: 640px;
+
+        margin-bottom: 73px;
+    }
+
+    .works__client-picture{
+        width: 270px;
+        height: 295px;
+
+        & img{
+            width: 100%;
+            height: 100%;
+        }
+    }
+    
+    .best__work {
+
+        margin-bottom: 40px;
+        
+        & .works__client-picture {
+        height: 480px;
+    
+        & img{
+            height: 480px;
+        }
+    
+        &::before {
+            content: url("../../img/best-work.png");
+            position: absolute;
+            top: 400px;
+            left: 0;
+            z-index: 2;
+        }
+    }
+}
+
+
+    .works__rewiev-wrapper{
+        position: relative;
+
+        width: 370px;
+
+        padding-left: 50px;
+        padding-right: 53px;
+
+        border: 1px solid #e5ddd5;
+        border-left: none;
+    }
+
+    .works__types-list{
+        position: absolute;
+        bottom: 15px;
+    }
+
+    //BUTTON!
+    .to-main{
+        display: inline-block;
+    }
+}
+
+@media (min-width: @desktop-width){
+    .works{
+        width: 1200px;
+        padding-left: 120px;
+        padding-right: 120px;
+    
+        &::after{
+            content: none;
+        }
+    }
+
+    .works__title{
+        margin-bottom: 70px;
+    }
+
+    .works__list{
+        width: 960px;
+
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between
+    }
+
+
+    .works__item{
+        width: 295px;
+        height: 540px;
+    }
+
+    .works__types-list{
+        bottom: 5px;
+    }
+
+    .best__work{
+        width: 960px;
+        height: 480px;
+    }
+
+    .works__client-picture{
+        width: 293px;
+        height: 293px;
+
+        & img{
+            width: 100%;
+            height: 100%;
+        }
+    }
+    
+    .best__work .works__client-picture {
+        height: 480px;
+        width: 480px;
+    
+        & img{
+            height: 480px;
+        }
+    
+        &::before {
+            content: url("../../img/best-work-reversed.png");
+            position: absolute;
+            top: 24px;
+            left: 785px;
+        }
+    }
+
+    .works__rewiev-wrapper{
+        width: 293px;
+        height: 250px;
+
+        padding-left: 35px;
+        padding-right: 35px;
+
+        border: 1px solid #e5ddd5;
+        border-top: none;
+    }
+
+    .best__work{
+
+        & .works__rewiev-wrapper{
+        width:  480px;
+        min-height: 480px;
+
+        padding-left: 40px;
+        padding-right: 145px;
+
+        border: 1px solid #e5ddd5;
+        border-left: none;
+        
+            & .works__client-name {
+                margin-top: 105px;
+            }
+
+            & .works__reviews-text {
+                padding-bottom: 160px;
+            }
+
+            & .works__types-list {
+                width: 360px;
+            }
+
+        }
+
+    }
+    // w293
+    // h250
+
+}

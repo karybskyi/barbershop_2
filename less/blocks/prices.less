@@ -1,0 +1,206 @@
+.prices {
+    width: 320px;
+    box-sizing: border-box;
+    padding-top: 70px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+.prices__title{
+    .title();
+    margin-bottom: 25px;
+}
+
+.prices__list{
+    width: 280px;
+}
+
+.prices__list tbody tr{
+    display: flex;
+    box-sizing: border-box;
+    width: 280px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    padding-bottom: 15px;
+}
+
+.prices__number{
+    display: none;
+    box-sizing: border-box;
+}
+
+.prices__procedure{
+    width: 190px;
+    order: 0;
+    box-sizing: border-box;
+    font-weight: bold;
+}
+
+.prices__additionaly{
+    order: 3;
+    box-sizing: border-box;
+}
+
+.prices__price{
+    width: 88px;
+    order: 1;
+    box-sizing: border-box;
+
+    text-align: end;
+}
+
+.prices__discount-holder {
+    width: 280px;
+    height: 91px;
+
+    border: 1px solid #484848;
+
+    padding-left: 114px;
+    padding-right: 45px;
+    padding-top: 18px;
+    padding-bottom: 20px;
+
+    box-sizing: border-box;
+
+    margin-top: 5px;
+    margin-bottom: 10px;
+
+    background-image: url("../../img/clock-icon-mobile.png");
+    background-repeat: no-repeat;
+    background-position: 23px 16px;
+}
+
+.prices_discount-info {
+    font-size: 20px;
+    line-height: 24px;
+}
+
+@media (min-width: @tablet-width){
+    .prices {
+        width: 768px;
+        padding: 0 64px;
+    }
+    
+    .prices__title {
+        text-align: start;
+        padding-top: 80px;
+    }
+
+    .prices__list{
+        width: 640px;
+        border: 1px solid #484848;
+        border-collapse: collapse;
+        margin-bottom: 10px;
+        
+    }
+
+    .prices__item{
+        padding-left: 20px;
+        padding-right: 20px;
+        border: 1px solid #484848;
+    }
+
+    .prices__list tbody tr{
+        display: table-row;
+        height: 55px;
+        width: 640px;
+    }
+
+    .prices__number{
+        display: table-cell;
+        width: 72px;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    
+    .prices__procedure{
+        width: 248px;
+    }
+    
+    .prices__additionaly{
+        width: 160px;
+    }
+    
+    .prices__price{
+        width: 160px;
+        text-align: start;
+    }
+
+    .prices__discount-holder {
+        width: 640px;
+        height: 110px;
+    
+        padding-left: 185px;
+        padding-right: 45px;
+        padding-top: 38px;
+        padding-bottom: 20px;
+
+        margin-bottom: 60px;
+
+    
+        background-image: url("../../img/clock-icon-tablet.png");
+        background-repeat: no-repeat;
+        background-position: 27px 20px;
+    }
+
+    .prices_discount-info {
+        font-size: 30px;
+        line-height: 27px;
+    }
+    
+
+}
+
+@media (min-width: @desktop-width){
+    .prices {
+        width: 1200px;
+        padding: 0 120px;
+        margin-bottom: 80px;
+
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    
+    .prices__title {
+        width: 100%;
+
+        padding-top: 75px;
+        margin-bottom: 55px;
+    }
+
+    .prices__list{
+        width: 630px;
+        min-height: 275px;
+        box-sizing: border-box;
+
+        margin: 0;
+    }
+
+    .prices__discount-holder {
+        width: 269px;
+        height: 275px;
+        margin: 0;
+        box-sizing: border-box;
+    
+        padding-left: 74px;
+        padding-right: 74px;
+        padding-top: 202px;
+        padding-bottom: 20px;
+
+        text-align: center;
+        
+        background-image: url("../../img/clock-icon-desktop.png");
+        background-repeat: no-repeat;
+        background-position: 65px 33px;
+    }
+
+    .prices_discount-info {
+        font-size: 20px;
+        line-height: 27px;
+    }
+}

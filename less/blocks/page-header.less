@@ -1,0 +1,123 @@
+.page-header {
+    display: flex;
+    flex-direction: column;
+    background-color: #242424;
+
+    // width: 320px;
+    margin: 0 auto;
+}
+
+.page-header__logo {
+    height: 85px;
+    
+    margin: 0 auto;
+
+    text-align: center;
+
+    background-color: #242424;
+}
+
+.page-header__logo img {
+    width: 226px;
+    height: 85px;
+}
+
+@media (min-width: @tablet-width) {
+    .page-header{
+        background-color: #000;
+
+        width: 768px;
+    }
+
+    .header--inner{
+        height: 285px;
+
+        position: relative;
+
+        &::after{
+            content: "";
+            width: 0;
+            height: 0;
+    
+            position: absolute;
+            left: 0;
+            bottom: 0;
+    
+            border: 384px solid #f8f5f2;
+            border-top: 40px solid transparent; 
+            border-bottom: none;
+        }
+    }
+    
+    .page-header__logo {
+        order: 2;
+        // height: 175px;
+        width: 100%;
+        height: 400px;
+
+        // margin: 0 auto;
+
+        background-color: #000;
+        background-image: url(/img/bg-header@1x.jpg);
+        background-repeat:  no-repeat;
+        background-position: center -9px;
+
+        // @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+        //     background-image: url("/img/bg-header-tablet@2x.jpg");
+        
+    }
+
+    .page-header__logo img {
+        display: block;
+        width: 370px;
+        height: auto;
+        margin: auto;
+        margin-top: 40px;
+    }
+
+    // .main-header-logo{
+    //     height: 400px;
+    // }
+
+}
+
+@media (min-width: @desktop-width) {
+    .page-header{
+        width: 1200px;
+        margin: 0 auto;
+    }
+
+    .header--inner{
+        height: 380px;
+
+        position: relative;
+
+        &::after{
+            content: "";
+
+    
+            border: 600px solid #f8f5f2;
+            border-top: 65px solid transparent; 
+            border-bottom: none;
+        }
+    }
+    
+    .page-header__logo {
+        height: 648px;
+
+
+        background: url("/img/bg-header@1x.jpg");
+        background-repeat: no-repeat;
+        background-position: center 0;
+        background-size: cover;
+    }
+
+
+    .page-header__logo img {
+        margin-top: 57px;
+    }
+
+    
+}
+
+
