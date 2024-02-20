@@ -1,9 +1,7 @@
 <!DOCTYPE html>
 <html lang="ru">
     <head>
-        <meta charset="utf-8"
-            name="viewport"
-            content="width=device-width,initial-scale=1 ">
+        <meta charset="utf-8" name="viewport" content="width=device-width,initial-scale=1 ">
         <title>Барбершоп «БОРОДИНСКИЙ»</title>
         <link href="../css/normalize.css" rel="stylesheet">
         <link href="../css/style.css" rel="stylesheet">
@@ -28,7 +26,7 @@
                         <li class="site-list__item  site-list__item--active">
                             <a>Записаться</a>
                         </li>
-                        </li>
+                        
                         <li class="site-list__item">
                             <a href="#">Контакты</a>
                         </li>
@@ -41,8 +39,8 @@
                         <li class="user-list__item">
                             <a class="user-list__login" href="login.html">
                                 <svg class="user-list__login-icon" width="16" height="16" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
-                                    <polygon points="0 7 7.01 7 7.01 4.06 10.96 8.01 7.01 11.91 7.01 9.06 0 9.02 0 7"/>
-                                    <polygon points="7.01 0 7.01 2 14.03 2 14.03 13.99 7.01 13.99 7.01 16 16 16 16 0 7.01 0"/>
+                                    <polygon points="0 7 7.01 7 7.01 4.06 10.96 8.01 7.01 11.91 7.01 9.06 0 9.02 0 7"></polygon>
+                                    <polygon points="7.01 0 7.01 2 14.03 2 14.03 13.99 7.01 13.99 7.01 16 16 16 16 0 7.01 0"></polygon>
                                 </svg>
                                 Войти</a>
                         </li>
@@ -55,34 +53,34 @@
         <main class="page-main">
             <section class="registration">
                 <div class="registration__title-wrapper">
-                    <h2 class="registration__title">Запись на стрижку</h1>
+                    <h2 class="registration__title">Запись на стрижку
                     <a class=" to-main button" href="../build/index.html">На главную</a>
-                </div>
+                </h2></div>
                 <form class="registration__form" action="https://echo.htmlacademy.ru" method="POST">
                     
                     <fieldset>
                         <div class="registration__item__wrapper">
                             <p>
                                 <label class="visually-hidden" for="registration__last-name">Фамилия</label>               
-                                <input class="registration__item" id="registration__last-name" type="text" name="last-name" placeholder="Фамилия" required>
+                                <input class="registration__item" id="registration__last-name" type="text" name="last-name" placeholder="Фамилия" required="">
                             </p>  
                             <p>
                                 <label class="visually-hidden" for="registration__first-name">Имя</label>               
-                                <input class="registration__item" id="registration__first-name" type="text" name="first-name" placeholder="Имя" required>
+                                <input class="registration__item" id="registration__first-name" type="text" name="first-name" placeholder="Имя" required="">
                             </p>  
                             <p>
                                 <label class="visually-hidden" for="registration__middle-tname">Отчество</label>               
-                                <input class="registration__item" id="registration__middle-name" type="text" name="middle-name" placeholder="Отчество" required>
+                                <input class="registration__item" id="registration__middle-name" type="text" name="middle-name" placeholder="Отчество" required="">
                             </p> 
                         </div> 
                         <div class="registration__item__wrapper-2">
                             <p>
                                 <label class="visually-hidden" for="registration__phone-number">Контактный телефон</label>               
-                                <input class="registration__item" id="registration__phone-number" type="tel" name="phone-number" placeholder="Контактный телефон" required>
+                                <input class="registration__item" id="registration__phone-number" type="tel" name="phone-number" placeholder="Контактный телефон" required="">
                             </p>  
                             <p>
                                 <label class="visually-hidden" for="registration__email">Контактный имейл</label>               
-                                <input class="registration__item" id="registration__email" type="email" name="email" placeholder="Контактный e-mail" required>
+                                <input class="registration__item" id="registration__email" type="email" name="email" placeholder="Контактный e-mail" required="">
                             </p>  
                         </div>
                         <p>   
@@ -95,7 +93,7 @@
                         <legend class="registration__legend">Выберите модель бороды:</legend>
                         <ul class="registration__options-list">
                             <li class="registration__options-item registration__options-item--admiral">
-                                <input class="visually-hidden registration__radio" type="radio" name="option-radio" id="option-admiral" value="admiral" checked>
+                                <input class="visually-hidden registration__radio" type="radio" name="option-radio" id="option-admiral" value="admiral" checked="">
                                 <label for="option-admiral">Адмирал</label>
                             </li>
                             <li class="registration__options-item registration__options-item--lumber">
@@ -121,7 +119,7 @@
                         <legend class="registration__legend">Дополнительные услуги:</legend>
                         <ul class="registration__additional-services-list">
                             <li class="registration__additional-services-item">
-                                <input class="visually-hidden registration__checkbox" type="checkbox" name="beard-coloring" id="beard-coloring" checked>
+                                <input class="visually-hidden registration__checkbox" type="checkbox" name="beard-coloring" id="beard-coloring" checked="">
                                 <label for="beard-coloring">Подкрасить бороду</label> 
                             </li>
                             <li class="registration__additional-services-item">
@@ -133,7 +131,7 @@
                                 <label for="grizzle-removing">Убрать седину</label> 
                             </li>
                             <li class="registration__additional-services-item">
-                                <input class="visually-hidden registration__checkbox" type="checkbox" name="mustache-curling" id="mustache-curling" checked>
+                                <input class="visually-hidden registration__checkbox" type="checkbox" name="mustache-curling" id="mustache-curling" checked="">
                                 <label for="mustache-curling">Накрутить усы</label> 
                             </li>
                             <li class="registration__additional-services-item">
@@ -185,8 +183,7 @@
                                         0 0 0 .72-.3l.05-.07a.9.9 0 0 0 .1-.25 1.38 1.38 0 0 0 0-.37 4.48 4.48 0 0 1 .09-1.05 2.77 2.77 0 0 
                                         1 .23-.71 1.74 1.74 0 0 1 .29-.4 1.19 1.19 0 0 1 .23-.2h.11a.86.86 0 0 1 .77.21 4.52 4.52 0 0 1 
                                         .83.79q.39.47.93 1.05a6.41 6.41 0 0 0 1 .87l.27.16a3.31 3.31 0 0 0 .71.3 1.53 1.53 0 0 0 
-                                        .76.07l3.48-.05a1.58 1.58 0 0 0 .8-.17.68.68 0 0 0 .34-.37 1.06 1.06 0 0 0 0-.46 1.71 1.71 0 0 0-.1-.36z" 
-                                        fill="#fff"/>
+                                        .76.07l3.48-.05a1.58 1.58 0 0 0 .8-.17.68.68 0 0 0 .34-.37 1.06 1.06 0 0 0 0-.46 1.71 1.71 0 0 0-.1-.36z" fill="#fff"></path>
                                     </svg>
                                 </a>
                             </li>
@@ -194,9 +191,8 @@
                                 <a class="social__link social__link--facebook button button--footer" href="fb.com/htmlacademy">
                                     <span class="visually-hidden">Мы в FB</span>
                                     <svg xmlns="http://www.w3.org/2000/svg" width="19" height="22" viewBox="0 0 10.15 21.74">
-                                        <path class="icon"  d="M3.34 1.12A4.77 4.77 0 0 1 6.53 0h3.61v3.81H7.81a1.07 1.07 0 0 0-1.09.83v2.55h3.42c-.08 
-                                        1.23-.24 2.45-.41 3.67h-3v10.87H2.21V10.86H0V7.21h2.19V3.66a3.83 3.83 0 0 1 1.15-2.54z" 
-                                        fill="#fff"/>
+                                        <path class="icon" d="M3.34 1.12A4.77 4.77 0 0 1 6.53 0h3.61v3.81H7.81a1.07 1.07 0 0 0-1.09.83v2.55h3.42c-.08 
+                                        1.23-.24 2.45-.41 3.67h-3v10.87H2.21V10.86H0V7.21h2.19V3.66a3.83 3.83 0 0 1 1.15-2.54z" fill="#fff"></path>
                                     </svg>
                                 </a>
                             </li>
@@ -204,11 +200,10 @@
                                 <a class="social__link social__link--instagram button button--footer" href="instagram.com/htmlacademy">
                                     <span class="visually-hidden">Мы в IG</span>
                                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
-                                        <path class="icon"  d="M18 0H2a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zm-8 
+                                        <path class="icon" d="M18 0H2a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zm-8 
                                         6a4 4 0 1 1-4 4 4 4 0 0 1 4-4zM2.5 18a.47.47 0 0 1-.5-.5V9h2.1a3.4 3.4 0 0 0-.1 1 6 
                                         6 0 1 0 12 0 3.4 3.4 0 0 0-.1-1H18v8.5a.47.47 0 0 1-.5.5zM18 4.5a.47.47 0 0 1-.5.5h-2a.47.47 
-                                        0 0 1-.5-.5v-2a.47.47 0 0 1 .5-.5h2a.47.47 0 0 1 .5.5z" 
-                                        fill="#fff"/>
+                                        0 0 1-.5-.5v-2a.47.47 0 0 1 .5-.5h2a.47.47 0 0 1 .5.5z" fill="#fff"></path>
                                     </svg>
                                 </a>
                             </li>

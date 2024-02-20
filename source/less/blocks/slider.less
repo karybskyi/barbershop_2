@@ -1,13 +1,6 @@
 .slider__item{
-    // width: 320px;
-
     display: none;
-
-    // transition: left 0.3s ease;
-
-    // box-sizing: border-box;
 }
-
 
 .slider__toggles{
     display: flex;
@@ -22,9 +15,8 @@
     height: 10px;
 
     text-align: center;
-    font-size: 0;///0
+    font-size: 0;
     transform: translate(-50%);
-
 }
 
 .slider__toggles label  {
@@ -40,7 +32,6 @@
     cursor: pointer;
 }
 
-
 .advantages__toggles .slider__toggles label {
     border-color: #4e4e4e;
 }
@@ -48,7 +39,6 @@
 .reviews__toggles .slider__toggles label {
     border-color: #858483;
 }
-
 
 #slide-adv-1:checked ~ .slider__list .slider__item:nth-child(1){
     display: block;
@@ -60,7 +50,6 @@
     display: block;
 }
 
-//////
 #slide-rv-1:checked ~ .slider__list .slider__item:nth-child(1){
     display: block;
 }
@@ -71,25 +60,16 @@
     display: block;
 }
 
-
-
-
 #slide-adv-1:checked ~ .slider__toggles label[for="slide-adv-1"],
 #slide-adv-2:checked ~ .slider__toggles label[for="slide-adv-2"],
 #slide-adv-3:checked ~ .slider__toggles label[for="slide-adv-3"]{
   background-color: #fff;
-
   border-color: #fff;
 }
-
-
 
 #slide-rv-1:checked ~ .slider__toggles label[for="slide-rv-1"],
 #slide-rv-2:checked ~ .slider__toggles label[for="slide-rv-2"],
 #slide-rv-3:checked ~ .slider__toggles label[for="slide-rv-3"]{
   background-color: #000;
-
   border-color: #000;
 }
-
-

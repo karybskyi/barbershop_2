@@ -2,6 +2,7 @@
   "name": "barbershop_2",
   "version": "1.0.0",
   "description": "Gulp project for barbershop_2",
+  "type": "module",
   "main": "gulpfile.js",
   "devDependencies": {
     "autoprefixer": "^9.6.0",
@@ -9,12 +10,16 @@
     "gulp": "^4.0.2",
     "gulp-cli": "^2.3.0",
     "gulp-csso": "^4.0.1",
-    "gulp-less": "^4.0.1",
+    "gulp-imagemin": "^9.0.0",
+    "gulp-less": "^5.0.0",
     "gulp-plumber": "^1.2.1",
     "gulp-postcss": "^8.0.0",
+    "gulp-posthtml": "^3.0.5",
     "gulp-rename": "^2.0.0",
     "gulp-svgstore": "^9.0.0",
     "gulp-webp": "^5.0.0",
+    "posthtml-include": "^2.0.0",
+    "run-sequence": "^2.2.1",
     "webpack-dev-server": "^3.5.1"
   },
   "scripts": {
@@ -33,5 +38,9 @@
   "bugs": {
     "url": "https://github.com/chistakaribsky/barbershop_2/issues"
   },
-  "homepage": "https://github.com/chistakaribsky/barbershop_2#readme"
+  "homepage": "https://github.com/chistakaribsky/barbershop_2#readme",
+  "dependencies": {
+    "browsersync": "^0.0.1-security",
+    "del": "^6.1.1"
+  }
 }
