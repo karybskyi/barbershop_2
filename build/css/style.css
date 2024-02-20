@@ -6,13 +6,13 @@ body {
   font-weight: normal;
   font-family: "Pt Sans Narrow";
   font-style: normal;
-  src: url("fonts/PTSansNarrow.woff2") format("woff2"), url("fonts/PTSansNarrow.woff") format("woff");
+  src: url("../fonts/PTSansNarrow.woff2") format("woff2"), url("../fonts/PTSansNarrow.woff") format("woff");
 }
 @font-face {
   font-weight: bold;
   font-family: "Pt Sans Narrow";
   font-style: normal;
-  src: url("fonts/PTSansNarrowBold.woff2") format("woff2"), url("fonts/PTSansNarrowBold.woff") format("woff");
+  src: url("../fonts/PTSansNarrowBold.woff2") format("woff2"), url("../fonts/PTSansNarrowBold.woff") format("woff");
 }
 body {
   min-width: 320px;
@@ -370,7 +370,7 @@ input[type="radio"]:active + label::before {
     width: 100%;
     height: 400px;
     background-color: #000;
-    background-image: url(/img/bg-header@1x.jpg);
+    background-image: url(../img/bg-header@1x.jpg);
     background-repeat: no-repeat;
     background-position: center -9px;
   }
@@ -399,7 +399,7 @@ input[type="radio"]:active + label::before {
   }
   .page-header__logo {
     height: 648px;
-    background: url("/img/bg-header@1x.jpg");
+    background: url("../img/bg-header@1x.jpg");
     background-repeat: no-repeat;
     background-position: center 0;
     background-size: cover;
