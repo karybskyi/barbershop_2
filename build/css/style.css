@@ -989,13 +989,13 @@ input[type="radio"]:active + label::before {
   background-repeat: no-repeat;
 }
 .advantages__item--fast {
-  background-image: url(../../img/advantage-1.png);
+  background-image: url(../img/advantage-1.png);
 }
 .advantages__item--cool {
-  background-image: url(../../img/advantage-2.png);
+  background-image: url(../img/advantage-2.png);
 }
 .advantages__item--price {
-  background-image: url(../../img/advantage-3.png);
+  background-image: url(../img/advantage-3.png);
 }
 .advantages__title {
   margin-block-start: 0;
