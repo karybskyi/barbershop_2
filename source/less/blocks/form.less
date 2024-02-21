@@ -3,9 +3,7 @@ input[type="tel"],
 input[type="email"],
 input[type="password"],
 textarea {
-
     padding: 17px 19px;
-
 
     box-sizing: border-box;
 
@@ -14,7 +12,6 @@ textarea {
 
 textarea {
     width: 100%;
-    // 380
     min-height: 112px;
 }
 
@@ -49,7 +46,6 @@ textarea:focus {
     outline: none;
 }
 
-
 input[type="checkbox"] + label,
 input[type="radio"] + label {
     position: relative;
@@ -60,13 +56,9 @@ input[type="radio"] + label {
     user-select: none;
 }
 
-
-
-////?
 input[type="checkbox"] + label {
     padding-left: 60px;
 }
-/////
 
 input[type="checkbox"] + label::before,
 input[type="radio"] + label::before
@@ -80,11 +72,6 @@ input[type="radio"] + label::before
     background-color: #fff;
 }
 
-
-
-
-
-//checkbox///////////////////////////////////////////////////
 input[type="checkbox"] + label::before {
     top: 0;
     left: 0;
@@ -94,7 +81,7 @@ input[type="checkbox"] + label::before {
 }
 
 input[type="checkbox"]:checked + label::before {
-    background-image: url(../../img/checkbox-checked.png);
+    background-image: url(../img/checkbox-checked.png);
     background-repeat: no-repeat;
    
 }
@@ -128,8 +115,6 @@ input[type="checkbox"]:focus + label::before,
 input[type="radio"]:focus + label::before,
 input[type="radio"]:checked:hover + label::after,
 input[type="radio"]:checked:focus + label::after{
-    // content: "";
-    // position: absolute;
     border: 1px solid #d5c9bd;
 }
 

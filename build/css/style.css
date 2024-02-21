@@ -298,7 +298,7 @@ input[type="checkbox"] + label::before {
   height: 36px;
 }
 input[type="checkbox"]:checked + label::before {
-  background-image: url(../../img/checkbox-checked.png);
+  background-image: url(../img/checkbox-checked.png);
   background-repeat: no-repeat;
 }
 input[type="radio"] + label::before {
