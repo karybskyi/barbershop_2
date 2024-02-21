@@ -370,7 +370,7 @@ input[type="radio"]:active + label::before {
     width: 100%;
     height: 400px;
     background-color: #000;
-    background-image: url(../img/bg-header@1x.jpg);
+    background-image: url(../img/bg-header-tablet@1x.jpg);
     background-repeat: no-repeat;
     background-position: center -9px;
   }
@@ -399,7 +399,7 @@ input[type="radio"]:active + label::before {
   }
   .page-header__logo {
     height: 648px;
-    background: url("../img/bg-header@1x.jpg");
+    background: url("../img/bg-header-desktop@1x.jpg");
     background-repeat: no-repeat;
     background-position: center 0;
     background-size: cover;
@@ -1520,7 +1520,7 @@ input[type="radio"]:active + label::before {
   height: 480px;
 }
 .best__work .works__client-picture::before {
-  content: url("../../img/best-work.png");
+  content: url("../img/best-work.png");
   position: absolute;
   top: 400px;
   left: 0;
@@ -1572,14 +1572,14 @@ input[type="radio"]:active + label::before {
   top: 4px;
 }
 .cut::before {
-  content: url("../../img/cut-icon.png");
+  content: url("../img/cut-icon.png");
 }
 .shaving::before,
 .beard::before {
-  content: url("../../img/shaving-icon.png");
+  content: url("../img/shaving-icon.png");
 }
 .mustache::before {
-  content: url("../../img/mustache-icon.png");
+  content: url("../img/mustache-icon.png");
   left: -6px;
   top: 2px;
 }
@@ -1636,7 +1636,7 @@ input[type="radio"]:active + label::before {
     height: 480px;
   }
   .best__work .works__client-picture::before {
-    content: url("../../img/best-work.png");
+    content: url("../img/best-work.png");
     position: absolute;
     top: 400px;
     left: 0;
@@ -1704,7 +1704,7 @@ input[type="radio"]:active + label::before {
     height: 480px;
   }
   .best__work .works__client-picture::before {
-    content: url("../../img/best-work-reversed.png");
+    content: url("../img/best-work-reversed.png");
     position: absolute;
     top: 24px;
     left: 785px;
@@ -2145,23 +2145,23 @@ fieldset p {
   left: 35.5px;
 }
 .registration__options-item--admiral {
-  background-image: url("../../img/admiral-icon.png");
+  background-image: url("../img/admiral-icon.png");
   background-position-x: 20.5px;
 }
 .registration__options-item--lumber {
-  background-image: url("../../img/lumber-icon.png");
+  background-image: url("../img/lumber-icon.png");
   background-position-x: 17.5px;
 }
 .registration__options-item--polar {
-  background-image: url("../../img/polar-icon.png");
+  background-image: url("../img/polar-icon.png");
   background-position-x: 15px;
 }
 .registration__options-item--boyar {
-  background-image: url("../../img/boyar-icon.png");
+  background-image: url("../img/boyar-icon.png");
   background-position-x: 17.5px;
 }
 .registration__options-item--sage {
-  background-image: url("../../img/sage-icon.png");
+  background-image: url("../img/sage-icon.png");
   background-position-x: 22.5px;
 }
 .registration__additional-services-list {
