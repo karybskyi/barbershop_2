@@ -1476,7 +1476,7 @@ input[type="radio"]:active + label::before {
   width: 0;
   height: 0;
   position: absolute;
-  bottom: -34px;
+  bottom: -33px;
   left: 0;
   border: 160px solid transparent;
   border-top: 34px solid #f8f5f2;
