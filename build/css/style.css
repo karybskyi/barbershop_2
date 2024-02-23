@@ -976,7 +976,7 @@ input[type="radio"]:active + label::before {
   height: 0;
   position: absolute;
   left: 0;
-  bottom: -34px;
+  bottom: -33px;
   border: 160px solid transparent;
   border-top: 34px solid #242424;
   border-bottom: none;
@@ -1100,7 +1100,7 @@ input[type="radio"]:active + label::before {
   }
   .advantages__wrapper::after {
     left: -120px;
-    bottom: -65px;
+    bottom: -64px;
     border: 600px solid transparent;
     border-top: 65px solid #353535;
     border-bottom: none;
