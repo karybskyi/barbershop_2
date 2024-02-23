@@ -1811,7 +1811,7 @@ input[type="radio"]:active + label::before {
   box-sizing: border-box;
   margin-top: 5px;
   margin-bottom: 10px;
-  background-image: url("../../img/clock-icon-mobile.png");
+  background-image: url("../img/clock-icon-mobile.png");
   background-repeat: no-repeat;
   background-position: 23px 16px;
 }
@@ -1868,7 +1868,7 @@ input[type="radio"]:active + label::before {
     padding-top: 38px;
     padding-bottom: 20px;
     margin-bottom: 60px;
-    background-image: url("../../img/clock-icon-tablet.png");
+    background-image: url("../img/clock-icon-tablet.png");
     background-repeat: no-repeat;
     background-position: 27px 20px;
   }
@@ -1907,7 +1907,7 @@ input[type="radio"]:active + label::before {
     padding-top: 202px;
     padding-bottom: 20px;
     text-align: center;
-    background-image: url("../../img/clock-icon-desktop.png");
+    background-image: url("../img/clock-icon-desktop.png");
     background-repeat: no-repeat;
     background-position: 65px 33px;
   }
@@ -1989,12 +1989,12 @@ input[type="radio"]:active + label::before {
   font-size: 18px;
 }
 .login__icon--user {
-  background-image: url(../../img/icon-user.png);
+  background-image: url(../img/icon-user.png);
   background-repeat: no-repeat;
   background-position: 247px 17px;
 }
 .login__icon--password {
-  background-image: url(../../img/icon-password.png);
+  background-image: url(../img/icon-password.png);
   background-repeat: no-repeat;
   background-position: 247px 17px;
 }
