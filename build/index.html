@@ -8,8 +8,12 @@
     </head>
     <body>
         <header class="page-header">
-            <a class="page-header__logo main-header-logo">
-                <img class="page-header__logo-image" src="img/logotype-mobile.svg" width="226" height="30" alt="Барбершоп «БОРОДИНСКИЙ»">
+            <a class="page-header__logo">
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="img/logotype-desktop.svg">
+                  <source media="(min-width: 768px)" srcset="img/logotype-tablet.svg">
+                  <img src="img/logotype-mobile.svg" width="226" height="30" alt="Барбершоп «Бородинский»">
+                </picture>
             </a>
             
             <nav class="main-nav main-nav--closed main-nav--nojs">
